@@ -390,6 +390,7 @@ collapse_obs2 <- function(x) {
 #' }
 
 export <- function(connect, value, name, template, ...) {
+  browser()
   # '.' in table names are not good!
   names(value) <- sub("\\.", "_", names(value))
   #if url.map=FALSE, have to change 'url_key' to url
